@@ -1,6 +1,6 @@
 # R3Det-PyTorch
 
-R3Det based on mmdet2.19.0.
+R3Det based on mmdetection 2.19.0.
 
 ## Installation
 

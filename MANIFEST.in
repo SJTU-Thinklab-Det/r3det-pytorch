@@ -1,4 +1,0 @@
-include requirements/*.txt
-include r3det/.mim/model-index.yml
-recursive-include r3det/.mim/configs *.py *.yml
-recursive-include r3det/.mim/tools *.py *.sh
