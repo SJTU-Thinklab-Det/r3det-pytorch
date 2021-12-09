@@ -1,12 +1,13 @@
-# R3Det
+# R3Det-PyTorch
 
+R3Det based on mmdet2.19.0.
 
 ## Installation
 
 
 ```shell
 # install mmdetection first if you haven't installed it yet. (Refer to mmdetection for details.)
-pip install mmdet==2.19
+pip install mmdet==2.19.0
 
 # install r3det (Compiling rotated ops is a little time-consuming.)
 pip install -r requirements.txt
@@ -19,7 +20,7 @@ pip install -v -e .
 
 ## Quick Start
 
-Please change [path](configs/rretinanet/rretinanet_obb_r50_fpn_1x_dota_v3.py#L3) in configs to your data path.
+Please change [path](configs/_base_/datasets/dota1_0.py#L3) in configs to your data path.
 ```shell
 # train
 CUDA_VISIBLE_DEVICES=0 PORT=29500 \
