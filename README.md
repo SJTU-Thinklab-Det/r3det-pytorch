@@ -1,9 +1,9 @@
-# R<sup>3</sup>Det: Refined Single-Stage Detector with Feature Refinement for Rotating Object
+# R3Det-PyTorch
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![arXiv](http://img.shields.io/badge/cs.CV-arXiv%3A1908.05612-B31B1B.svg)](https://arxiv.org/abs/1908.05612)
+R3Det based on mmdetection 2.19.0.
 
 ## Installation
+
 
 ```shell
 # install mmdetection first if you haven't installed it yet. (Refer to mmdetection for details.)
@@ -97,18 +97,3 @@ The differences of the three angle representations are reflected in poly2obb, ob
 
 - `MS` means multiple scale image split.
 - `RR` means random rotation.
-
-## Citation
-
-```
-@inproceedings{yang2021r3det,
-    title={R3Det: Refined Single-Stage Detector with Feature Refinement for Rotating Object},
-    author={Yang, Xue and Yan, Junchi and Feng, Ziming and He, Tao},
-    booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-    volume={35},
-    number={4},
-    pages={3163--3171},
-    year={2021}
-}
-
-```
