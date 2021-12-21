@@ -1,4 +1,4 @@
-import os
+# import os
 import os.path as osp
 import shutil
 import sys
@@ -174,7 +174,7 @@ def add_mim_extension():
 
 
 if __name__ == '__main__':
-    add_mim_extension()
+    # add_mim_extension()
     setup(
         name='r3det',
         version=get_version(),

@@ -244,7 +244,7 @@ class DOTADataset(CustomDataset):
 
         merged_results = mmcv.track_parallel_progress(merge_func,
                                                       list(collector.items()),
-                                                      min(4, os.cpu_count()))
+                                                      min(1, os.cpu_count()))
         return zip(*merged_results)
 
     def _results2submission(self, results, out_folder=None):
