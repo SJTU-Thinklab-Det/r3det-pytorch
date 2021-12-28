@@ -36,7 +36,7 @@ CUDA_VISIBLE_DEVICES=0 PORT=29500 \
 For DOTA dataset, please crop the original images into 1024×1024 patches with an overlap of 200 by run
 ```shell
 python tools/split/img_split.py --base_json \
-       tools/split/split_configs/split_configs/dota1_0/ss_trainval.json
+       tools/split/split_configs/dota1_0/ss_trainval.json
 
 python tools/split/img_split.py --base_json \
        tools/split/split_configs/dota1_0/ss_test.json
