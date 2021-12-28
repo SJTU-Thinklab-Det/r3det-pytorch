@@ -209,7 +209,7 @@ def bbox_overlaps_iof(bboxes1, bboxes2, eps=1e-6):
     sg_polys1 = [shgeo.Polygon(p) for p in bboxes1.reshape(rows, -1, 2)]
     sg_polys2 = [shgeo.Polygon(p) for p in polys2.reshape(cols, -1, 2)]
     overlaps = np.zeros(h_overlaps.shape)
-    for p in zip(*np.nonzero(h_overlaps, as_tuple=False)):
+    for p in zip(*np.nonzero(h_overlaps)):
         overlaps[p] = sg_polys1[p[0]].intersection(sg_polys2[p[-1]]).area
     unions = np.array([p.area for p in sg_polys1], dtype=np.float32)
     unions = unions[..., None]
@@ -228,7 +228,7 @@ def get_window_obj(info, windows, iof_thr):
     window_anns = []
     for i in range(windows.shape[0]):
         win_iofs = iofs[:, i]
-        pos_inds = np.nonzero(win_iofs >= iof_thr, as_tuple=False)[0].tolist()
+        pos_inds = np.nonzero(win_iofs >= iof_thr)[0].tolist()
 
         win_ann = dict()
         for k, v in info['ann'].items():
