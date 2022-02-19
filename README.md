@@ -3,6 +3,9 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![arXiv](http://img.shields.io/badge/cs.CV-arXiv%3A1908.05612-B31B1B.svg)](https://arxiv.org/abs/1908.05612)
 
+## News
+2022.02.18 MMRotate: OpenMMLab Rotated Object Detection Benchmark was released!
+
 ## Installation
 
 ```shell
